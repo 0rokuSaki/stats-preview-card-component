@@ -1,68 +1,74 @@
 <!DOCTYPE html>
-<html lang="en" dir="ltr">
+<html lang="en">
 
 <head>
-  <meta charset="utf-8">
-  <title>Stats preview card component</title>
+  <meta charset="UTF-8">
 
-  <!-- Bootstrap Stylesheets -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
-
-  <!-- Bootstrap Javascript -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-
-  <!-- External CSS Stylesheets -->
-  <link rel="stylesheet" href="css/styles.css">
+  <!-- displays site properly based on user's device -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap" rel="stylesheet">
 
-  <!-- Favicon -->
-  <link rel="icon" href="images/favicon-32x32.png">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
+  <!-- Bootstrap Javascript -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Stats preview card component</title>
 </head>
 
 <body>
 
-  <div class="container main-container">
-
-    <div class="row">
-
-      <div class="col-lg-6 order-lg-2 image-container">
-        <img src="images\image-header-desktop.jpg" class="img-fluid image-header-desktop" alt="header image">
-        <img src="images\image-header-desktop.jpg" class="img-fluid image-header-mobile" alt="header image">
-      </div>
-
-      <div class="col-lg-6 order-lg-1 text-lg-left text-center info-container">
-        <div class="container">
-          <h1 class="main-heading">Get <span class="main-heading-accent">insights</span> that help your business grow.</h1>
-          <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer experience, and overall efficiency.</p>
-          <div class="row stats-container">
-
-            <div class="col-lg-4 stat-item">
-              <h3 class="stat-heading">10k+</h3>
-              <p class="stat-paragraph">COMPANIES</p>
-            </div>
-
-            <div class="col-lg-4 stat-item">
-              <h3 class="stat-heading">314</h3>
-              <p class="stat-paragraph">TEMPLATES</p>
-            </div>
-
-            <div class="col-lg-4 stat-item">
-              <h3 class="stat-heading">12M+</h3>
-              <p class="stat-paragraph">QUERIES</p>
-            </div>
-
+  <section id="main-section">
+    <div class="container main-container">
+      <div class="row">
+        <div class="col-lg-6 order-lg-2 image-container">
+          <div class="image-overlay">
+            <img src="images/image-header-mobile.jpg" class="image-header-mobile" alt="header image">
+            <img src="images/image-header-desktop.jpg" class="image-header-desktop" alt="header image">
           </div>
         </div>
-
+        <div class="col-lg-6 order-lg-1 text-lg-left info-container">
+          <h1 class="main-header">Get <span class="main-header-accent">insights</span> that help your business grow.</h1>
+          <p class="main-paragraph">Discover the benefits of data analytics and make better decisions regarding revenue, customer
+            experience, and overall efficiency.</p>
+          <div class="container stats-container">
+            <div class="row">
+              <div class="col-lg-4 stat-item">
+                <h3 class="stat-header">10k+</h3>
+                <p class="stat-paragraph">COMPANIES</p>
+              </div>
+              <div class="col-lg-4 stat-item">
+                <h3 class="stat-header">314</h3>
+                <p class="stat-paragraph">TEMPLATES</p>
+              </div>
+              <div class="col-lg-4 stat-item">
+                <h3 class="stat-header">12M+</h3>
+                <p class="stat-paragraph">QUERIES</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-
     </div>
-  </div>
+  </section>
 
+  <section id="attribution-section">
+    <div class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/0rokuSaki" target="_blank">Aaron Barkan</a>.
+    </div>
+  </section>
 
 </body>
 
